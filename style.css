@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Righteous", sans-serif;
+    font-style: normal;
+}
+
+body {
+    background: #1C1C1C;
+}
+
+.nav_bar {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    background: #171717;
+    height: 100%;
+    padding: 1.2rem;
+    margin-right: 100px;
+}
+
+.nav_bar_sub, .main_body_sub{
+    color: #4F4F4F;
+    font-weight: 200;
+}
+.nav_bar_title, .main_body_title {
+    color: #fff;
+    font-weight: 300;
+    font-size: 40px;
+}
+.main_body_title {
+    margin-top: 30px;
+    font-size: 60px;
+}
+
+.main_body {
+    width: 100%;
+    margin-top: 150px;
+}
+
+.page {
+    display: flex;
+    height: 100vh;
+}
+
+.project_list {
+    margin-top: 30px;
+    display: flex;
+    gap: 2rem;
+}
+
+.project_block {
+    width: 250px;
+    border-radius: 30px;
+    overflow: hidden;
+    border: solid #5B5B5B 1px;
+    position: relative;
+    cursor: pointer;
+    background: #3c3c3c;
+    transition: all 0.3s ease;
+}
+
+.black_gradient {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(180deg, #00000081, rgb(0, 0, 0));
+    transition: background 0.3s ease;
+}
+
+
+.project_block:hover .black_gradient {
+    background: linear-gradient(180deg, #00000023, rgb(0, 0, 0));   
+}
+
+.image_background {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.fa-eye1 {
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    transition: all 0.3s ease-in-out;
+}
+.project_block:hover .fa-eye2 {
+    opacity: 1;
+}
+.project_block:hover .fa-eye1 {
+    opacity: 0;
+}
+
+.fa-eye2 {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.fa-eye2 {
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.fa-heart1 {
+    position: absolute;
+    color: #fff;
+    z-index: 2;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 30px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+.fa-heart2 {
+    position: absolute;
+    color: #fff;
+    z-index: 3;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 30px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.fa-heart2:hover + .fa-heart1 {
+    opacity: 1;
+}
+.fa-heart2:active {
+    font-size: 25px;
+}
+.fa-heart2:active + .fa-heart1 {
+    font-size: 25px;
+}
+
+.fa-eye-slash1 {
+    color: #fff;
+    z-index: 1;
+    font-size: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.coming_soon_block {
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    height: min-content;
+}
+
+.coming_soon_title {
+    margin-top: 5px;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.project_link {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.nav_bar_progress_bar_title {
+    color: #fff;
+    font-weight: 200;
+    margin-top: auto;
+    margin-bottom: 15px;
+}
+
+.progress_bar {
+    width: 100%;
+    height: 40px;
+    border-radius: 12px;
+    background: #1C1C1C;
+    display: flex;
+    align-items: center;
+}
+
+.progress_bar_fill {
+    background: #fff;
+    height: 100%;
+    width: 25px;
+    border-radius: 12px 0px 0px 12px;
+    margin-right: 10px;
+}
+
+.progress_percentage {
+    color: #fff;
+    font-weight: 100;
+    font-size: 22px;
+}
