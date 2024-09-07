@@ -14,33 +14,105 @@ body {
 }
 
 .nav_bar {
-    width: 350px;
+    width: 100vw;
     display: flex;
-    flex-direction: column;
-    background: #171717;
-    height: 100%;
+    height: 100px;
     padding: 1.2rem;
     margin-right: 100px;
-    transition: all 0.3s ease;
+    position: fixed;
+    padding-left: 200px;
+    align-items: center;
+    padding-right: 200px;
 }
 
-.nav_bar_sub, .main_body_sub{
+.nav_title {
+    color: #fff;
+    font-weight: 300;
+}
+
+.nav_link_group {
+    display: flex;
+    margin-left: auto;
+    gap: 2rem;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.blue_link {
+    color: #3F69FF;
+}
+
+.action_buttons {
+    margin-top: 80px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.hire_button {
+    background: #3F69FF;
+    border-radius: 12px;
+    padding: 15px 35px;
+}
+
+.hire_button, .projects_button{
+    color: #fff;
+    font-weight: 300;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.main_body_sub{
     color: #4F4F4F;
     font-weight: 200;
 }
-.nav_bar_title, .main_body_title {
+.main_body_title {
     color: #fff;
     font-weight: 300;
-    font-size: 40px;
+    font-size: 50px;
 }
 .main_body_title {
     margin-top: 30px;
     font-size: 60px;
 }
+.main_body_title_no_m {
+    font-size: 80px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.top_margin {
+    margin-top: 10px;
+}
 
 .main_body {
     width: 100%;
-    margin-top: 110px;
+    margin-top: 180px;
+    margin-left: 200px;
+}
+
+.main_body_home {
+    width: max-content;
+    margin-top: 300px;
+    margin-left: 200px;
+    position: relative;
+}
+
+.effect_1 {
+    position: absolute;
+    left: -30px;
+    top: -20px;
+}
+
+.effect_2 {
+    position: absolute;
+    right: -20px;
+    top: 100px;
 }
 
 .page {
@@ -268,23 +340,19 @@ body {
     background: #ffffff;
 }
 
-.nav_title {
-    font-size: 25px;
-    font-size: 100;
-}
 
 .nav-icon {
-    font-size: 25px;
-}
-
-.nav_link {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
+    font-size: 22px;
 }
 
 
+.white {
+    color: #fff;
+}
+
+.blue {
+    color: #3F69FF;
+}
 
 
 
