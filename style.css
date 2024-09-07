@@ -270,12 +270,12 @@ body {
         height: 100%;
     }
     .project_block {
-        width: 400px;
+        width: 70vw;
         height: 200px;
     }
     .image_background {
         object-fit: cover;
-        transform: scale(190%);
+        transform: scale(210%);
     }
     .nav_bar {
         display: none;
@@ -285,6 +285,7 @@ body {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+
     }
     .project_title {
         top: 70%;
