@@ -393,10 +393,10 @@ body {
 .percentage {
     position: absolute;
     top: 150px;
-    left: -16px;
+    left: -13px;
     color: #fff;
     font-weight: 100;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .percentage_text {
