@@ -11,6 +11,8 @@
 
 body {
     background: #1C1C1C;
+    background-image: url(images_folder/BackgroundImage.png);
+    background-size: cover;
 }
 
 .nav_bar {
@@ -20,7 +22,7 @@ body {
     padding: 1.2rem;
     margin-right: 100px;
     position: fixed;
-    padding-left: 200px;
+    padding-left: 250px;
     align-items: center;
     padding-right: 200px;
 }
@@ -93,14 +95,27 @@ body {
 .main_body {
     width: 100%;
     margin-top: 180px;
-    margin-left: 200px;
+    margin-left: 250px;
 }
 
 .main_body_home {
     width: max-content;
     margin-top: 300px;
-    margin-left: 200px;
+    margin-left: 250px;
     position: relative;
+    display: flex;
+}
+
+.main_body_section_2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.main_body_section_2 img{
+    position: absolute;
+    top: -120px;
+    right: -1100px;
 }
 
 .effect_1 {
