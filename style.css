@@ -11,7 +11,7 @@
 
 body {
     background: #1C1C1C;
-    background-image: url(BackgroundImage.png);
+    background-image: url(images_folder/BackgroundImage.png);
     background-size: cover;
 }
 
@@ -43,6 +43,14 @@ body {
     color: #fff;
     font-weight: 100;
     font-size: 20px;
+}
+
+.nav_link .blue_link:hover {
+    color: #5d80ff;
+}
+
+.nav_link:hover {
+    color: #b0b0b0;
 }
 
 .blue_link {
@@ -409,7 +417,44 @@ body {
     font-size: 30px;
 }
 
+.contact_group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 30px;
+}
 
+.contact_block {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    background: #3F69FF;
+    position: relative;
+}
+.contact_block:hover {
+    background: #557aff;
+}
+
+.contact_text {
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.contact_button {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+}
+
+.contact-icon {
+    font-size: 25px;
+}
 
 
 
