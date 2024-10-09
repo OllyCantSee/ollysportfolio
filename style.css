@@ -11,7 +11,7 @@
 
 body {
     background: #1C1C1C;
-    background-image: url(BackgroundImage.png);
+    background-image: url(images_folder/BackgroundImage.png);
     background-size: cover;
 }
 
@@ -27,7 +27,14 @@ body {
     padding-right: 200px;
 }
 
-.nav_title {
+.nav_title_1 {
+    color: #fff;
+    font-weight: 300;
+    display: block;
+}
+
+.nav_title_2 {
+    display: none;
     color: #fff;
     font-weight: 300;
 }
@@ -84,9 +91,6 @@ body {
 .main_body_title {
     color: #fff;
     font-weight: 300;
-    font-size: 50px;
-}
-.main_body_title {
     margin-top: 30px;
     font-size: 60px;
 }
@@ -107,40 +111,56 @@ body {
 }
 
 .main_body_home {
-    width: max-content;
-    margin-top: 300px;
-    margin-left: 250px;
     position: relative;
     display: flex;
+    width: 100%;
+}
+
+.main_body_section_1 {
+    padding-top: 300px;
+    padding-left: 250px;
+    width: 100%;
+    position: relative;
+} 
+
+.introduction_text {
+    position: relative;
+    width: max-content;
+}
+
+.name_text {
+    position: relative;
+    width: max-content;
 }
 
 .main_body_section_2 {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-right: 150px;
+    padding-top: 200px;
 }
 .main_body_section_2 img{
-    position: absolute;
-    top: -120px;
-    right: -1100px;
+    margin-left: auto;
+    height: 600px;
 }
 
 .effect_1 {
     position: absolute;
     left: -30px;
-    top: -20px;
+    top: -30px;
 }
 
 .effect_2 {
     position: absolute;
     right: -20px;
-    top: 100px;
+    top: 80px;
 }
 
 .page {
     display: flex;
     height: 100vh;
+    width: 100%;
 }
 
 .project_list {
@@ -554,7 +574,14 @@ body {
 
 @media only screen and (max-width: 1486px) {
     .nav_bar {
-        max-width: 260px;
+        padding-right: 80px;
+        padding-left: 140px;
+    }
+    .main_body_section_2 {
+        padding-right: 80px;
+    }
+    .main_body_section_1 {
+        padding-left: 140px;
     }
 }
 @media only screen and (max-width: 1300px) {
@@ -571,47 +598,45 @@ body {
     .project_title {
         top: 80%;
     }
-}
-@media only screen and (max-width: 852px) {
-    .nav_bar {
-        max-width: 250px;
-    }
-    .nav_bar_title {
-        font-size: 28px;
-    }
-    .nav_bar {
-        margin-right: 50px;
-    }
-    .project_list {
-        flex-flow: column;
-        height: 100%;
-    }
-    .project_block {
-        width: 70vw;
-        height: 200px;
-    }
-    .image_background {
-        object-fit: cover;
-        transform: scale(210%);
-    }
-    .nav_bar {
+    .main_body_section_2 img{
         display: none;
     }
-    .main_body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-
-    }
-    .project_title {
-        top: 70%;
+    .nav_link_group {
+        display: none;
     }
 
-    .fa-eye2 {
-        top: 40%;
+    .nav_title_1 {
+        display: none;
     }
-    .fa-eye1 {
-        top: 40%;
+    .nav_title_2 {
+        display: block
     }
+}
+@media only screen and (max-width: 852px) {
+    .main_body_sub {
+        font-size: 1.3rem;
+    }
+    .main_body_title_no_m {
+        font-size: 4rem;
+    }
+
+    .percentage_group {
+        display: none;
+    }
+
+    .nav_bar {
+        padding-right: 20px;
+        padding-left: 40px;
+    }
+    .main_body_section_1 {
+        padding-left: 40px;
+    }
+
+    .effect_1 {
+        display: none;
+    }
+    .effect_2 {
+        display: none;
+    }
+
 }
