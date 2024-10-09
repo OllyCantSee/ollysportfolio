@@ -614,10 +614,10 @@ body {
 }
 @media only screen and (max-width: 852px) {
     .main_body_sub {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     .main_body_title_no_m {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .percentage_group {
@@ -638,5 +638,13 @@ body {
     .effect_2 {
         display: none;
     }
+
+    .action_buttons {
+        width: 100%;
+    }
+    .main_body_section_2 {
+        display: none;
+    }
+
 
 }
