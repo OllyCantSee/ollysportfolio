@@ -11,7 +11,7 @@
 
 body {
     background: #1C1C1C;
-    background-image: url(BackgroundImage.png);
+    background-image: url(images_folder/BackgroundImage.png);
     background-size: cover;
 }
 
@@ -25,6 +25,7 @@ body {
     padding-left: 250px;
     align-items: center;
     padding-right: 200px;
+    z-index: 2;
 }
 
 .nav_title_1 {
@@ -108,6 +109,7 @@ body {
     width: 100%;
     margin-top: 180px;
     margin-left: 250px;
+    z-index: 1;
 }
 
 .main_body_home {
@@ -583,6 +585,9 @@ body {
     .main_body_section_1 {
         padding-left: 140px;
     }
+    .main_body {
+        padding-left: 140px;
+    }
 }
 @media only screen and (max-width: 1300px) {
     .nav_bar {
@@ -611,6 +616,10 @@ body {
     .nav_title_2 {
         display: block
     }
+
+    .main_body {
+        margin-left: 0px;
+    }
 }
 @media only screen and (max-width: 852px) {
     .main_body_sub {
@@ -623,13 +632,13 @@ body {
     .percentage_group {
         display: none;
     }
-
+  
     .nav_bar {
         padding-right: 20px;
-        padding-left: 40px;
+        padding-left: 20px;
     }
     .main_body_section_1 {
-        padding-left: 40px;
+        padding-left: 20px;
     }
 
     .effect_1 {
@@ -646,5 +655,15 @@ body {
         display: none;
     }
 
+    .main_body {
+        padding-left: 20px;
+    }
 
+    .project_list {
+        flex-direction: column;
+    }
+
+    .project_block {
+        width: 300px;
+    }
 }
