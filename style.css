@@ -11,7 +11,7 @@
 
 body {
     background: #1C1C1C;
-    background-image: url(BackgroundImage.png);
+    background-image: url(images_folder/BackgroundImage.png);
     background-size: cover;
 }
 
@@ -664,6 +664,16 @@ body {
     }
 
     .project_block {
-        width: 300px;
+        width: 80%
+    }
+
+    .image_background {
+        scale: 100%;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .image_background {
+        scale: 150%;
     }
 }
