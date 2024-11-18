@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
+
+.ct-animate-blink {
+    animation: blink 1.5s infinite;
+    animation-fill-mode: both;
+}
+ 
+@keyframes blink {
+    0% { opacity: 0.3 }
+    50% { opacity: 1 }
+    100% { opacity: 0.3 }
+}
+
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -436,7 +449,7 @@ body {
     border-radius: 9999px;
 }
 .percentage_line_white {
-    height: 14vh;
+    height: 32vh;
     width: 8px;
     background: #fff;
     position: absolute;
@@ -444,15 +457,50 @@ body {
     top: 18px;
     z-index: 3;
     border-radius: 9999px;
+    cursor: pointer;
 }
 
 .percentage {
     position: absolute;
-    top: 150px;
+    top: 300px;
     left: -13px;
     color: #fff;
     font-weight: 100;
     font-size: 25px;
+}
+
+
+.percentage_line_white:hover .bug_log {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.bug_log {
+    z-index: 4;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: #1C1C1C;
+    border-radius: 30px;
+    left: -40px;
+    top: -5px;
+    border: solid #5B5B5B 1px;
+    opacity: 0;
+    pointer-events: none;
+    padding: 1rem 1.2rem;
+}
+
+.bug_title {
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.bug_text {
+    color: #fff;
+    font-size: 19px;
+    font-weight: 300;
+    margin-left: 5px;
 }
 
 .percentage_text {
